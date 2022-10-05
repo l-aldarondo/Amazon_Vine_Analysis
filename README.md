@@ -38,7 +38,7 @@ Software:
 
 <br/>
 
-We choosed an [Amazon_reviews_dataset](https://s3.amazonaws.com/amazon-reviews-pds/tsv/index.txt) to be analyzed. All the datasets had the same schemata, as shown in this image below:
+We chose an [Amazon_reviews_dataset](https://s3.amazonaws.com/amazon-reviews-pds/tsv/index.txt) to be analyzed. All the datasets had the same schemata, as shown in this image below:
 
 (a)![amazon_dataset_example](./Images/amazon_dataset_example.png)
  
