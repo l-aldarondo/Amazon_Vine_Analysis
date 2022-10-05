@@ -120,6 +120,7 @@ Using PySpark:
 
 
 ## Results:
+#### Refer to figure(f) above
 
 - How many Vine reviews and non-Vine reviews were there?
 
