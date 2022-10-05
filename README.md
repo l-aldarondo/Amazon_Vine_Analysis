@@ -16,10 +16,9 @@ This new assignment consists of two technical analysis deliverables and a writte
 
 ### Purpose
 
-Analyzing Amazon reviews written by members of the paid Amazon Vine program. The Amazon Vine program is a service that allows manufacturers and publishers to receive reviews for their products. Companies like SellBy pay a small fee to Amazon and provide products to Amazon Vine members, who are then required to publish a review.
+To analize Amazon reviews written by members of the paid Amazon Vine program. The Amazon Vine program is a service that allows manufacturers and publishers to receive reviews for their products. Companies like SellBy pay a small fee to Amazon and provide products to Amazon Vine members, who are then required to publish a review.
 
-In this project, you’ll have access to approximately 50 datasets. Each one contains reviews of a specific product, from clothing apparel to wireless products. You’ll need to pick one of these datasets and use PySpark to perform the ETL process to extract the dataset, transform the data, connect to an AWS RDS instance, and load the transformed data into pgAdmin. Next, you’ll use PySpark, Pandas, or SQL to determine if there is any bias toward favorable reviews from Vine members in your dataset. Then, you’ll write a summary of the analysis for Jennifer to submit to the SellBy stakeholders.
-
+In this project, we will choose 1 dataset from approximately 50 datasets. Then we will use PySpark to perform the ETL process to extract the dataset, transform the data, connect to an AWS RDS instance, and load the transformed data into pgAdmin. Then, use PySpark, Pandas, or SQL to determine if there is any bias toward favorable reviews from Vine members in your dataset. 
 
 ## Resources
 
@@ -37,7 +36,75 @@ Software:
 
 <br/>
 
+We choosed an [Amazon_reviews_dataset](https://s3.amazonaws.com/amazon-reviews-pds/tsv/index.txt) to be analyzed. All the datasets had the same schemata, as shown in this image below:
+
+(a)![amazon_dataset_example](./Images/amazon_dataset_example.png)
+ 
+<sub> Figure (a) Amazon Dataset Example
+
+<br/>
+
+### The customers_table DataFrame:
+
+Created the customers_table, using the code in the Amazon_Reviews_ETL_starter_code.ipynb file and following the steps below to aggregate the reviews by customer_id.
+
+- Used the groupby() function on the customer_id column of the DataFrame.
+
+- Counted all the customer ids using the agg() function by chaining it to the groupby() function. After we used this function, a new column was created, count(customer_id).
+
+- Rename the count(customer_id) column using the withColumnRenamed() function so it matches the schema for the customers_table in pgAdmin.
+
+- The customers_table DataFrame should look like this:
+
+(b)![customer_id_table](./Images/customer_id_table.png)
+ 
+<sub> Figure (b) Customer ID Table
+
+<br/>
+
+### The products_table DataFrame:
+
+To create the products_table, we used the select() function to select the product_id and product_title, then droped duplicates with the drop_duplicates() function to retrieve only unique product_ids.
+
+The final products_table DataFrame should look like this:
+
+(c)![product_id_table](./Images/product_id_table.png)
+ 
+<sub> Figure (c) Product ID Table
+
+<br/>
+
+### The review_id_table DataFrame:
+
+To create the review_id_table, we used the select() function to select the columns that are in the review_id_table in pgAdmin and convert the review_date column to a date.
+
+The final review_id_table DataFrame should look like this:
+
+(d)![review_id_table](./Images/review_id_table.png)
+ 
+<sub> Figure (d) Review ID Table
+
+<br/>
+
+### The vine_table DataFrame:
+
+To create the vine_table, we used the select() function to select only the columns that are in the vine_table in pgAdmin
+
+The final vine_table DataFrame should look like this:
+
+(e)![vine_table](./Images/vine_table.png)
+ 
+<sub> Figure (e) Vine Table
+
+<br/>
+
 ## Results
+
+(f)![result_analysis](./Images/result_analysis.png)
+ 
+<sub> Figure (f) Result analysis
+
+<br/>
 
 - How many Vine reviews and non-Vine reviews were there?
 
@@ -71,12 +138,4 @@ Ha: 5star_vine <> 5star_not_vine(there is a difference).
 [Markdown](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
 
 [Spark](https://downloads.apache.org/spark/)
-
-
-
-(a)![Mecha Car Linear Regression Summary](./Images/MechaCar_linear_regression_summary.png)
- 
-<sub> Figure (a) MechaCar Linear Regression Summary
-
-<br/>
 
