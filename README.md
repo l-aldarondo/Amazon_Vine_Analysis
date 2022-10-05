@@ -40,7 +40,7 @@ We choosed an [Amazon_reviews_dataset](https://s3.amazonaws.com/amazon-reviews-p
 
 (a)![amazon_dataset_example](./Images/amazon_dataset_example.png)
  
-<sub> Figure (a) Amazon Dataset Example
+<sub> Figure (a) Amazon Dataset Schema example
 
 <br/>
 
@@ -54,11 +54,10 @@ Created the customers_table, using the code in the Amazon_Reviews_ETL_starter_co
 
 - Rename the count(customer_id) column using the withColumnRenamed() function so it matches the schema for the customers_table in pgAdmin.
 
-- The customers_table DataFrame should look like this:
 
 (b)![customer_id_table](./Images/customer_id_table.png)
  
-<sub> Figure (b) Customer ID Table
+<sub> Figure (b) The customers_table DataFrame
 
 <br/>
 
@@ -66,11 +65,10 @@ Created the customers_table, using the code in the Amazon_Reviews_ETL_starter_co
 
 To create the products_table, we used the select() function to select the product_id and product_title, then droped duplicates with the drop_duplicates() function to retrieve only unique product_ids.
 
-The final products_table DataFrame should look like this:
 
 (c)![product_id_table](./Images/product_id_table.png)
  
-<sub> Figure (c) Product ID Table
+<sub> Figure (c) The final products_table DataFrame
 
 <br/>
 
@@ -78,11 +76,10 @@ The final products_table DataFrame should look like this:
 
 To create the review_id_table, we used the select() function to select the columns that are in the review_id_table in pgAdmin and convert the review_date column to a date.
 
-The final review_id_table DataFrame should look like this:
 
 (d)![review_id_table](./Images/review_id_table.png)
  
-<sub> Figure (d) Review ID Table
+<sub> Figure (d) The final review_id_table DataFrame
 
 <br/>
 
@@ -90,21 +87,37 @@ The final review_id_table DataFrame should look like this:
 
 To create the vine_table, we used the select() function to select only the columns that are in the vine_table in pgAdmin
 
-The final vine_table DataFrame should look like this:
 
 (e)![vine_table](./Images/vine_table.png)
  
-<sub> Figure (e) Vine Table
+<sub> Figure (e) The final vine_table DataFrame
 
 <br/>
 
-## Results
+## D2:
+
+Using either PySpark:
+
+- Filtered the data and created a new DataFrame or table to retrieve all the rows where the total_votes count is equal to or greater than 20.
+
+- Filtered the new DataFrame or table created in Step 1 and created a new DataFrame or table to retrieve all the rows where the number of helpful_votes divided by total_votes is equal to or greater than 50%.
+
+- Filtered the DataFrame or table created in Step 2, and created a new DataFrame or table that retrieves all the rows where a review was written as part of the Vine program (paid), vine == 'Y'.
+
+- Repeat Step 3, but this time retrieved all the rows where the review were not part of the Vine program (unpaid), vine == 'N'.
+
+- Determined the total number of reviews, the number of 5-star reviews, and the percentage of 5-star reviews for the two types of review (paid vs unpaid), as shown in Figure (f).
+
+<br/>
 
 (f)![result_analysis](./Images/result_analysis.png)
  
 <sub> Figure (f) Result analysis
 
 <br/>
+
+
+## Results:
 
 - How many Vine reviews and non-Vine reviews were there?
 
