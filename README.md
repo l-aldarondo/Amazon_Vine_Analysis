@@ -98,7 +98,7 @@ To create the vine_table, we used the select() function to select only the colum
 
 ### D2:Determine Bias of Vine Reviews
 
-Using either PySpark:
+Using PySpark:
 
 - Filtered the data and created a new DataFrame or table to retrieve all the rows where the total_votes count is equal to or greater than 20.
 
