@@ -131,7 +131,7 @@ Using PySpark:
 
 - What percentage of Vine reviews were 5 stars? What percentage of non-Vine reviews were 5 stars?
 
-    - **38.24%** of the 5 star reviews were Vine and **54.47%** of 5 star reviews were non-ine.
+    - **38.24%** of the 5 star reviews were Vine and **54.47%** of 5 star reviews were non-Vine.
 
 
 ## Summary
