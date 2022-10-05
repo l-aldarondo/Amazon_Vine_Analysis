@@ -5,7 +5,7 @@ Using PySpark to perform the ETL process, connect to AWS RDS instance and load t
 
 ### Overview of Analysis
 
-This new assignment consists of two technical analysis deliverables and a written report. You will submit the following:
+This project consists of two technical analysis deliverables and a written report:
 
 - Deliverable 1: Perform ETL on Amazon Product Reviews
 
