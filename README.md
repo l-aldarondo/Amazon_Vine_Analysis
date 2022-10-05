@@ -34,6 +34,8 @@ Software:
 
 ## Methodology
 
+### D1: Perform ETL on Amazon Product Reviews
+
 <br/>
 
 We choosed an [Amazon_reviews_dataset](https://s3.amazonaws.com/amazon-reviews-pds/tsv/index.txt) to be analyzed. All the datasets had the same schemata, as shown in this image below:
@@ -94,7 +96,7 @@ To create the vine_table, we used the select() function to select only the colum
 
 <br/>
 
-## D2:
+### D2:Determine Bias of Vine Reviews
 
 Using either PySpark:
 
@@ -121,16 +123,15 @@ Using either PySpark:
 
 - How many Vine reviews and non-Vine reviews were there?
 
-    - There were 170 vine reviews and 37840 non_vine reviews
-
+    - There were **170** vine reviews and 37840 non_vine reviews
 
 - How many Vine reviews were 5 stars? How many non-Vine reviews were 5 stars?
 
-    - There were 65 5 star Vine reviews and 20612 5 star non-Vine reviews.
+    - There were **65** 5 star Vine reviews and **20,612** 5 star non-Vine reviews.
 
 - What percentage of Vine reviews were 5 stars? What percentage of non-Vine reviews were 5 stars?
 
-    - 38.24% of the 5 star reviews were Vine and 54.47% of 5 star reviews were non-ine.
+    - **38.24%** of the 5 star reviews were Vine and **54.47%** of 5 star reviews were non-ine.
 
 
 ## Summary
