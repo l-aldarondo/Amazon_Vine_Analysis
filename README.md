@@ -144,11 +144,11 @@ Ha: 5star_vine <> 5star_not_vine, there is a difference in the percenage(proport
  
 - percentage_5star_not_vine = **54.47%**
  
-- **findings: the percentage of 5star rating is not the same when comparing vine reviewsto not_vine reviews.**
+- **findings: the percentage of 5 star rating is not the same when comparing vine reviews to not_vine reviews.**, Figure (f).
  
-- **There is reason to believe that the percentage of 5star raitings is not directly tied to whether the review is paid or unpaid.**
+- **There is reason to believe that the percentage of 5 star raitings is not directly tied to whether the review is paid or unpaid.**
  
-- note: this hypothesis test would need to be evaluated comparing the proportion of 5star reviews among the two samples.
+- Additional analysis should be perform to evaluate the hypothesis test comparing the proportion of 5 star reviews among the two samples.
 
 
 ## References
