@@ -123,7 +123,7 @@ Using either PySpark:
 
 - How many Vine reviews and non-Vine reviews were there?
 
-    - There were **170** vine reviews and 37840 non_vine reviews
+    - There were **170** vine reviews and **37,840** non_vine reviews.
 
 - How many Vine reviews were 5 stars? How many non-Vine reviews were 5 stars?
 
@@ -136,14 +136,18 @@ Using either PySpark:
 
 ## Summary
 
-Ho: 5star_vine = 5star_not_vine (no difference in the percenage(proportion) of 5star ratings paid(vine) vs unpaid(not vine).
+Ho: 5star_vine = 5star_not_vine, there is no difference in the percenage(proportion) of 5star ratings paid(vine) vs unpaid(not vine).
 
-Ha: 5star_vine <> 5star_not_vine(there is a difference).
+Ha: 5star_vine <> 5star_not_vine, there is a difference in the percenage(proportion) of 5star ratings paid(vine) vs unpaid(not vine).
 
 - percentage_5star_vine = **38.24%**
+ 
 - percentage_5star_not_vine = **54.47%**
+ 
 - **findings: the percentage of 5star rating is not the same when comparing vine reviewsto not_vine reviews.**
+ 
 - **There is reason to believe that the percentage of 5star raitings is not directly tied to whether the review is paid or unpaid.**
+ 
 - note: this hypothesis test would need to be evaluated comparing the proportion of 5star reviews among the two samples.
 
 
@@ -152,4 +156,6 @@ Ha: 5star_vine <> 5star_not_vine(there is a difference).
 [Markdown](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
 
 [Spark](https://downloads.apache.org/spark/)
+ 
+[Google Colab](https://colab.research.google.com/github/jakevdp/PythonDataScienceHandbook/blob/master/notebooks/01.01-Help-And-Documentation.ipynb)
 
