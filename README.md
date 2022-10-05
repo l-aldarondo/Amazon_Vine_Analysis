@@ -123,7 +123,7 @@ Using PySpark:
 
 - How many Vine reviews and non-Vine reviews were there?
 
-    - There were **170** vine reviews and **37,840** non_vine reviews.
+    - There were **170** Vine reviews and **37,840** non_Vine reviews.
 
 - How many Vine reviews were 5 stars? How many non-Vine reviews were 5 stars?
 
