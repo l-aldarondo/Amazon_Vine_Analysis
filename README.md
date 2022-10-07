@@ -114,7 +114,7 @@ Using PySpark:
 
 (f)![result_analysis](./Images/result_analysis.png)
  
-<sub> Figure (f) Result analysis
+<sub> Figure (f) Vine reviews analysis
 
 <br/>
 
@@ -122,17 +122,17 @@ Using PySpark:
 ## Results:
 #### Refer to figure(f) above
 
-- How many Vine reviews and non-Vine reviews were there?
+- Q1. How many Vine reviews and non-Vine reviews were there?
 
-    - There were **170** Vine reviews and **37,840** non_Vine reviews.
+    - A1. There were **170** Vine reviews and **37,840** non_Vine reviews.
 
-- How many Vine reviews were 5 stars? How many non-Vine reviews were 5 stars?
+- Q2. How many Vine reviews were 5 stars? How many non-Vine reviews were 5 stars?
 
-    - There were **65** 5 star Vine reviews and **20,612** 5 star non-Vine reviews.
+    - A2. There were **65** 5 star Vine reviews and **20,612** 5 star non-Vine reviews.
 
-- What percentage of Vine reviews were 5 stars? What percentage of non-Vine reviews were 5 stars?
+- Q3. What percentage of Vine reviews were 5 stars? What percentage of non-Vine reviews were 5 stars?
 
-    - **38.24%** of the 5 star reviews were Vine and **54.47%** of 5 star reviews were non-Vine.
+    - A3. **38.24%** of the 5 star reviews were Vine and **54.47%** of 5 star reviews were non-Vine.
 
 
 ## Summary
