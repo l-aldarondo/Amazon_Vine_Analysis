@@ -1,6 +1,10 @@
 # Amazon_Vine_Analysis
 Using PySpark to perform the ETL process, connect to AWS RDS instance and load transformed data into pgAdmin
 
+![Amazon_Big_Data_AWS](./Images/big-data-with-aws.png)
+
+<sub>[Image source](https://www.whizlabs.com/blog/wp-content/uploads/2019/12/big-data-with-aws.png)
+
 ## Background
 
 ### Overview of Analysis
